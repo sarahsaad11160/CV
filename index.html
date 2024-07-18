@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+        }
+        .header img {
+            width: 150px;
+            border-radius: 50%;
+        }
+        .header h1 {
+            margin-top: 10px;
+            color: #0056b3;
+        }
+        .header p {
+            color: #666;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        .section h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
+        }
+        .contact-form {
+            margin-top: 20px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            margin-bottom: 10px;
+        }
+        .marquee {
+            color: #0056b3;
+            font-weight: bold;
+        }
+        .barcode {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .dark-mode {
+            background-color: #333;
+            color: #f0f0f0;
+        }
+        .light-mode {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+    <script>
+        function toggleMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</head>
+<body class="light-mode">
+    <div class="container">
+        <div class="header">
+            <img src="profile.jpg" alt="Sarah Saad Al-Subaie">
+            <h1>Sarah Saad Al-Subaei</h1>
+            <p>Aspiring Information Systems Specialist</p>
+            <button onclick="toggleMode()" class="btn btn-secondary">Toggle Dark/Light Mode</button>
+        </div>
+        
+        <div class="section">
+            <h2>Summary</h2>
+            <p>A high-achieving MIS student graduated in 2024 with a strong technical background in programming (Java), database management (MySQL), computer networks, and proficiency in Microsoft Office. Possessing exceptional communication, problem-solving, teamwork, management, and team leadership skills. Fluent in both Arabic (native) and English, I am eager to leverage my skills and experiences to pursue a challenging career in Information Systems.</p>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <p>Bachelor's Degree in Management Information Systems, University of Tabuk, Saudi Arabia, 2024.</p>
+        </div>
+
+        <div class="section">
+            <h2>Activities</h2>
+            <ul>
+                <li>Member of the College of Business Administration Club, University of Tabuk.</li>
+                <li>Certified Basic Leader under the Ministry of Energy initiative for community work enhancement.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <h3>Technical Skills:</h3>
+            <ul>
+                <li>Programming Languages: Java</li>
+                <li>Database Management: MySQL</li>
+                <li>Computer Networks</li>
+                <li>Microsoft Office Suite (Word, Excel, PowerPoint, etc.)</li>
+            </ul>
+            <h3>Soft Skills:</h3>
+            <ul>
+                <li>Communication</li>
+                <li>Problem-Solving</li>
+                <li>Teamwork</li>
+                <li>Management</li>
+                <li>Team Leadership</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Languages</h2>
+            <ul>
+                <li>Arabic</li>
+                <li>English</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Certifications and Courses</h2>
+            <p>To view the educational certificates and courses, please visit the following link:</p>
+            <p><a href="https://blackboardapp.ut.edu.sa/passport/Check/08f465f7-f043-4934-ad9f-98d43a384b18" target="_blank">Educational Certificates and Courses</a></p>
+            <div class="barcode">
+                <img src="barcode.png" alt="Barcode for Certificates">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Contact Information</h2>
+            <p>Email: sarahsaad11160@gmail.com</p>
+            <p>Phone: +966 554573303</p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="container">
+        <marquee class="marquee">سارة سعد السبيعي، طالبة ناجحة في تخصص نظم المعلومات الإدارية، سنة التخرج  عام 2024. أتطلع إلى توظيف مهاراتي وخبراتي في بناء مسيرتي المهنية في مجال نظم المعلومات.</marquee>
+    </div>
+</body>
+</html>
