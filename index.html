@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!D<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,8 +8,6 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
         }
         .container {
             background-color: #fff;
@@ -58,9 +56,9 @@
             background-color: #333;
             color: #f0f0f0;
         }
-        .light-mode {
-            background-color: #f0f0f0;
-            color: #333;
+        .dark-mode .container {
+            background-color: #444;
+            color: #f0f0f0;
         }
         @media (max-width: 768px) {
             .header h1 {
@@ -70,16 +68,15 @@
     </style>
     <script>
         function toggleMode() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
+            document.body.classList.toggle('dark-mode');
         }
     </script>
 </head>
-<body class="light-mode">
+<body>
     <div class="container">
         <div class="header">
-            <img src="profile.jpg" alt="Sarah Saad Al-Subaie">
-            <h1>Sarah Saad Al-Subaei</h1>
+            <img src="profile.jpg" alt="Sara Saad Al-Sabaei">
+            <h1>Sarah Saad Al-Subaie</h1>
             <p>Aspiring Information Systems Specialist</p>
             <button onclick="toggleMode()" class="btn btn-secondary">Toggle Dark/Light Mode</button>
         </div>
@@ -165,7 +162,7 @@
     </div>
     
     <div class="container">
-        <marquee class="marquee">سارة سعد السبيعي، طالبة ناجحة في تخصص نظم المعلومات الإدارية، سنة التخرج  عام 2024. أتطلع إلى توظيف مهاراتي وخبراتي في بناء مسيرتي المهنية في مجال نظم المعلومات.</marquee>
+        <marquee class="marquee">سارة سعد السبيعي، طالبة ناجحة في تخصص نظم المعلومات الإدارية، سنة التخرج في عام 2024. أتطلع إلى توظيف مهاراتي وخبراتي في بناء مسيرتي المهنية في مجال نظم المعلومات.</marquee>
     </div>
 </body>
 </html>
